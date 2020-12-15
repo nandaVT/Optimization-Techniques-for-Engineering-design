@@ -1,5 +1,6 @@
 import math
 import sympy as sym
+from sympy import sin,cos,tan,N
 
 print("BOUNDING PHASE METHOD")
 x = sym.Symbol('x')
@@ -7,7 +8,7 @@ x = sym.Symbol('x')
 
 ### Function ###
 
-f = x**2 - 5*x + x**2 
+f = x**2 + 10
 
 ################
 

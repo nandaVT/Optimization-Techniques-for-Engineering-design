@@ -15,7 +15,7 @@ def substitute(k):
 
 while(True):
     s = ""
-    func = "x**2+(54/x)"#input("Enter the function = ")    #"x**2+(54/x)"
+    func = input("Enter the function = ")    #"x**2+(54/x)"
     for i in func:
         s= s+i
         
@@ -26,10 +26,10 @@ while(True):
     except:
         print("Entered function is incompatible. Try again.")
         
-a = 0#float(input("Enter 'a' value = "))
-b = 5#float(input("Enter 'b' value = "))
+a = float(input("Enter 'a' value = "))
+b = float(input("Enter 'b' value = "))
 k = 1
-epsilon = 0.8
+epsilon = float(input("Enter epsilon value = "))
 l_o = b - a
 iteration = 1
 
@@ -47,10 +47,10 @@ while(1):
     if(x1 > x2):
         if(f_x1 < f_x2):
             a = x2
-            print("f_x1 > f_x2")
+            print("f_x1 < f_x2")
         if(f_x1 > f_x2):
             b = x1
-            print("f_x1 < f_x2")
+            print("f_x1 > f_x2")
     else:
         if(f_x1 > f_x2):
             a = x1

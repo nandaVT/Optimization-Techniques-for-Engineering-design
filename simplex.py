@@ -16,7 +16,7 @@ def substitute(pt):
 
 while(True):
     s = ""
-    func = "x-y+(2*x**2)+2*x*y+y**2" #input("Enter the function = ")
+    func = input("Enter the function = ")  #"x-y+(2*x**2)+2*x*y+y**2"
     for i in func:
         s= s+i
         
@@ -104,3 +104,4 @@ while(q > epsilon):
     q = math.sqrt(((f1-f_o)**2 + (f2 - f_o)**2 + (f3 - f_o)**2)/3 )
     print("q = ",q)
     
+print("x1 = {} x2 = {} x3 = {}".format(x1,x2,x3))

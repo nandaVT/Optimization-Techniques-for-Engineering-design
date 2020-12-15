@@ -1,20 +1,23 @@
 import sympy as sym
 from sympy import sin,cos,tan,N
 
-print("Testing ")
+print("********* TO EXIT PRESS 'q' **********")
 x = sym.Symbol('x')
 
 def substitute(k):
     return (f.subs(x,k))
 
-n = ""
-s = ""
-func = input("Enter the func = ")
-for i in func:
-    s= s+i
-exec("f = "+s)
-#f = eval(func,{"x": x ,"cos" : cos , "N" : N ,"sin" : sin ,"tan" : tan , "n" : n })
-
+while(True):
+    s = ""
+    func = input("Enter the function = ")
+    for i in func:
+        s= s+i
+        
+    try:
+        exec("f = "+s)
+        break
+    except:
+        print("Entered function is incompatible. Try again.")
 
 while(True):
     

@@ -48,7 +48,7 @@ while(mod_epsilon(delta) > E):
     f2 = substitute(x2)
     f3 = substitute(x3)
     f4 = substitute(x4)
-    print("f1 = {} f2 = {} f3 = {} f4 = {}".format(f1,f2,f3,f4,f_o))
+    print("f1 = {} f2 = {} f3 = {} f4 = {} f_o = {}".format(f1,f2,f3,f4,f_o))
     min_f = min(f1,f2,f3,f4,f_o)
     if(min_f == f_o):
         delta[0] = delta[0]/2
